@@ -91,15 +91,6 @@ function toggleNav() {
     element.classList.toggle("show_it");
 }
 
-/*function toggleNavB {
-    if (document.getElementById("dropdown_nav").style.display == "none") {
-        document.getElementById("dropdown_nav").style.display = "block";
-    }
-    else {
-        document.getElementById("dropdown_nav").style.display = "none";
-    }
-}*/
-
 /*Scroll to top function */
 function prepareScroller() {
     document.getElementById("nav_name").onclick = scroller;
