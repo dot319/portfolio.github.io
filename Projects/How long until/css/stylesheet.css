@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sanchez', serif;
+}
+
+/*Background image*/
+body {
+    background: url("../images/background.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/*Color scheme*/
+
+#nav_bar,
+#copyright_footer,
+#calculator {
+    background-color: rgba(243, 223, 255, 0.815);
+}
+
+/*Navigation bar*/
+#nav_bar {
+    min-height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+main {
+    margin-top: 100px;
+}
+
+#nav_bar_name {
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+#nav_bar_menu {
+    padding-top: 12px;
+    padding-bottom: 8px;
+}
+
+#nav_bar ul {
+    list-style-type: none;
+}
+
+#nav_bar li {
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#nav_bar a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.5s, background-color 0.5s;
+}
+
+#nav_bar a:hover {
+    color: white;
+    background-color: black;
+}
+
+/*Main page layouting*/
+#main_inner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Sound toggle*/
+#sound_toggle {
+    color: rgba(255, 255, 255, 0.212);
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+/*Calculator*/
+#calculator {
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#calculator p {
+    padding-top: 15px;
+}
+
+#calculator_form {
+    text-align: center;
+}
+
+#calculator_answer {
+    min-height: 40px;
+    padding-top: 18px;
+}
+
+/*Switch calculator*/
+#switch_calc {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.link_to_other {
+    width: 120px;
+    min-height: 70px;
+    border-radius: 10px;
+    border: solid;
+    border-color: white;
+    border-width: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.5s;
+}
+
+.link_to_other:hover {
+    background-color: rgba(255, 255, 255, 0.11);
+    cursor: pointer;
+}
+
+.space_between_links {
+    width: 20px;
+}
+
+#switch_calc_answer {
+    color: rgba(255, 255, 255, 0.822);
+    padding-top: 25px;
+}
+
+/*Copyright footer*/
+#copyright_footer {
+    bottom: 0;
+    left: 0;
+    height: 30px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#copyright_footer_inner {
+    text-align: center;
+    font-size: 13px;
+}
+
+.page {
+    min-height: 100%;
+}
