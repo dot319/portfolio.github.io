@@ -6,11 +6,6 @@
     scroll-behavior: smooth;
 }
 
-html,
-body {
-    height: 100%;
-}
-
 /*===Website's color scheme============================================================================*/
 #nav_header_inner,
 #hero_contact_button,
@@ -78,12 +73,12 @@ body {
 
 /*===Between sections==================================================================================*/
 .between_sections {
-    height:50px;
+    height: 140px;
 }
 
-.between_sections_bot {
+/* .between_sections_bot {
     height: 90px;
-}
+} */
 
 /*===Nav Header========================================================================================*/
 #nav_header {
@@ -103,6 +98,7 @@ body {
 #nav_header a:hover {
     color: black;
     background-color: rgb(255, 255, 255);
+    cursor: pointer;
 }
 
 #nav_header_inner {
@@ -203,7 +199,7 @@ main {
 }
 
 #hero_header_center {
-    height: calc(100vh - 140px);
+    height: calc(100% - 140px);
     width: 100%;
     position: absolute;
     display: flex;
@@ -255,6 +251,7 @@ main {
     animation-name: levitate;
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
+    height: 80px;
 }
 
 #hero_header_scrolldown_itself {

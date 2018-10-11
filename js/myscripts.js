@@ -5,6 +5,69 @@ window.onload = function() {
     prepareScroller();
 }
 
+/* The following 10 functions listen for menu clicks and scroll to 100px above the corresponding element, 
+so the navbar doesn't get in the way and there is some space between the navbar and the element.
+Work in progress: currently figuring out how to make it so only one function is needed. */
+document.getElementById("portfolio_hyperlink").onclick = function() {
+    skillAnchor = document.getElementById("portfolio").getBoundingClientRect();
+    var y = skillAnchor.top + window.scrollY;
+    window.scrollTo(0,y-100);
+}
+
+document.getElementById("portfolio_hyperlink_dropdown").onclick = function() {
+    skillAnchor = document.getElementById("portfolio").getBoundingClientRect();
+    var y = skillAnchor.top + window.scrollY;
+    window.scrollTo(0,y-100);
+}
+
+document.getElementById("projects_hyperlink").onclick = function() {
+    skillAnchor = document.getElementById("projects").getBoundingClientRect();
+    var y = skillAnchor.top + window.scrollY;
+    window.scrollTo(0,y-100);
+}
+
+document.getElementById("projects_hyperlink_dropdown").onclick = function() {
+    skillAnchor = document.getElementById("projects").getBoundingClientRect();
+    var y = skillAnchor.top + window.scrollY;
+    window.scrollTo(0,y-100);
+}
+
+document.getElementById("resume_hyperlink").onclick = function() {
+    skillAnchor = document.getElementById("resume").getBoundingClientRect();
+    var y = skillAnchor.top + window.scrollY;
+    window.scrollTo(0,y-100);
+}
+
+document.getElementById("resume_hyperlink_dropdown").onclick = function() {
+    skillAnchor = document.getElementById("resume").getBoundingClientRect();
+    var y = skillAnchor.top + window.scrollY;
+    window.scrollTo(0,y-100);
+}
+
+document.getElementById("skills_hyperlink").onclick = function() {
+    skillAnchor = document.getElementById("skills").getBoundingClientRect();
+    var y = skillAnchor.top + window.scrollY;
+    window.scrollTo(0,y-100);
+}
+
+document.getElementById("skills_hyperlink_dropdown").onclick = function() {
+    skillAnchor = document.getElementById("skills").getBoundingClientRect();
+    var y = skillAnchor.top + window.scrollY;
+    window.scrollTo(0,y-100);
+}
+
+document.getElementById("contact_hyperlink").onclick = function() {
+    skillAnchor = document.getElementById("contact").getBoundingClientRect();
+    var y = skillAnchor.top + window.scrollY;
+    window.scrollTo(0,y-100);
+}
+
+document.getElementById("contact_hyperlink_dropdown").onclick = function() {
+    skillAnchor = document.getElementById("contact").getBoundingClientRect();
+    var y = skillAnchor.top + window.scrollY;
+    window.scrollTo(0,y-100);
+}
+
 /*Sets the hero height to window height (minus topbar and padding above portfolio)*/
 function heroHeight() {
     var windowHeight = window.innerHeight;
@@ -12,7 +75,6 @@ function heroHeight() {
     var bufferHeight = document.getElementById("portfolio_above").clientHeight;
     var heroHeight = windowHeight - navBarHeight - bufferHeight;
     document.getElementById("hero_header").style.height = heroHeight + "px";
-    console.log(heroHeight);
 }
 
 /*Toggles the dropdownmenu*/
